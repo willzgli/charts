@@ -13,4 +13,4 @@ maintainers:
   name: cegao
 name: elastic-jupyter-operator
 version: 0.1.1
-kubeVersion: <= 1.22.5-x
+kubeVersion: ">=1.16.0-x"

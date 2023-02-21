@@ -26,4 +26,3 @@ sources:
 - https://github.com/bitnami/bitnami-docker-pytorch
 - https://pytorch.org/
 version: 2.4.6
-kubeVersion: <= 1.22.5-x

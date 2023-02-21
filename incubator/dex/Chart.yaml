@@ -17,4 +17,3 @@ maintainers:
   name: vi7
 name: dex
 version: 2.13.0
-kubeVersion: <= 1.22.5-x

@@ -8,4 +8,4 @@ maintainers:
 - email: yorkwang@tencent.com
   name: yorkwang
 version: 0.3.0
-kubeVersion: <= 1.22.5-x
+kubeVersion: ">= 1.16.0-x"

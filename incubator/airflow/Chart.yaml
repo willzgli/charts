@@ -7,11 +7,11 @@ icon: https://imgcache.qq.com/qcloud/tcloud_dtc/static/Industry_tke/2f2b5690-64a
 keywords:
 - workflow
 - dag
+kubeVersion: ">= 1.21.0-x < 1.25.0-x"
 maintainers:
 - email: gaetan@xeberon.net
   name: gsemet
 name: airflow
 sources:
 - https://airflow.apache.org/
-version: 6.9.1
-kubeVersion: < 1.22.0-x
+version: 6.9.2

@@ -1,0 +1,26 @@
+apiVersion: v2
+appVersion: 1.16.0
+dependencies:
+- condition: distributed-jmeter.enabled
+  name: distributed-jmeter
+  repository: file://../charts/jmeter
+- condition: grafana.enabled
+  name: grafana
+  repository: file://../charts/grafana
+- condition: influxdb.enabled
+  name: influxdb
+  repository: file://../charts/influxdb
+description: A Helm chart for jmeter suit.
+home: https://github.com/tkestack/charts
+icon: https://imgcache.qq.com/qcloud/tcloud_dtc/static/Industry_tke/d0955b92-9f66-4393-a974-5ec55dc4f69f.png
+keywords:
+- distributed-jmeter
+- grafana
+- influxdb
+maintainers:
+- email: silvertan@tencent.com
+  name: silvertan
+name: tke-jmeter-suite-non
+type: application
+version: 2.1-kona
+kubeVersion: ">= 1.21.0-x < 1.25.0-x"

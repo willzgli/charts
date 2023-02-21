@@ -15,4 +15,3 @@ name: kubernetes-dashboard
 sources:
 - https://github.com/kubernetes/dashboard
 version: 1.10.1
-kubeVersion: <= 1.22.5-x

@@ -1,14 +1,9 @@
 {{- if .Values.repoServer.autoscaling.enabled }}
-apiVersion: autoscaling/v2beta1
+apiVersion: {{ include "argo-cd.apiVersion.autoscaling" . }}
 kind: HorizontalPodAutoscaler
 metadata:
   labels:
-    app.kubernetes.io/name: {{ include "argo-cd.name" . }}-{{ .Values.repoServer.name }}-hpa
-    helm.sh/chart: {{ include "argo-cd.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
-    app.kubernetes.io/part-of: argocd
-    app.kubernetes.io/component: {{ .Values.repoServer.name }}
+    {{- include "argo-cd.labels" (dict "context" . "component" .Values.repoServer.name "name" (printf "%s-hpa" .Values.repoServer.name)) | nindent 4 }}
   name: {{ template "argo-cd.repoServer.fullname" . }}-hpa
 spec:
   scaleTargetRef:
@@ -18,16 +13,32 @@ spec:
   minReplicas: {{ .Values.repoServer.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.repoServer.autoscaling.maxReplicas }}
   metrics:
-{{- with .Values.repoServer.autoscaling.targetMemoryUtilizationPercentage }}
+  {{- with .Values.repoServer.autoscaling.targetMemoryUtilizationPercentage }}
     - type: Resource
       resource:
         name: memory
+        {{- if eq (include "argo-cd.apiVersion.autoscaling" $) "autoscaling/v2beta1" }}
         targetAverageUtilization: {{ . }}
-{{- end }}
-{{- with .Values.repoServer.autoscaling.targetCPUUtilizationPercentage }}
+        {{- else }}
+        target:
+          averageUtilization: {{ . }}
+          type: Utilization
+        {{- end }}
+  {{- end }}
+  {{- with .Values.repoServer.autoscaling.targetCPUUtilizationPercentage }}
     - type: Resource
       resource:
         name: cpu
+        {{- if eq (include "argo-cd.apiVersion.autoscaling" $) "autoscaling/v2beta1" }}
         targetAverageUtilization: {{ . }}
-{{- end }}
+        {{- else }}
+        target:
+          averageUtilization: {{ . }}
+          type: Utilization
+        {{- end }}
+  {{- end }}
+  {{- with .Values.repoServer.autoscaling.behavior }}
+  behavior:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 {{- end }}

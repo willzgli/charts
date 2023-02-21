@@ -7,6 +7,7 @@ icon: https://imgcache.qq.com/qcloud/tcloud_dtc/static/Industry_tke/fe6cc278-ad4
 keywords:
 - envoy
 - proxy
+kubeVersion: ">= 1.21.0-x"
 maintainers:
 - email: josdotso@cisco.com
   name: josdotso
@@ -15,5 +16,4 @@ maintainers:
 name: envoy
 sources:
 - https://github.com/envoyproxy/envoy
-version: 1.9.2
-kubeVersion: <= 1.22.5-x
+version: 1.9.3

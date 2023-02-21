@@ -9,4 +9,3 @@ maintainers:
 name: tke-spot-agent
 type: application
 version: 1.0.0
-kubeVersion: <= 1.22.5-x

@@ -16,4 +16,3 @@ sources:
 - https://github.com/prometheus/node_exporter
 - https://github.com/kubernetes/kube-state-metrics
 version: 11.1.2
-kubeVersion: < 1.22.0-x

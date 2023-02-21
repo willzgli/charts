@@ -293,3 +293,11 @@ consul-2  10.244.1.7:8301  alive   server  0.6.4  2         dc1
 consul-3  10.244.2.7:8301  failed  server  0.6.4  2         dc1
 consul-4  10.244.2.8:8301  failed  server  0.6.4  2         dc1
 ```
+
+
+Release Notes
+
+|  版本号     |    变更时间     |    变更内容   |
+|  ---------  | -------------- |--------------|
+|  3.9.5      | 2022年07月27日 | 修复chart内镜像地址为ccr.ccs.tencentyun.com, 支持1.21 之前集群|
+|  3.9.6      | 2023年02月21日 | 修改PodDisruptionBudget 资源版本为policy/v1, 支持1.21+ 集群|

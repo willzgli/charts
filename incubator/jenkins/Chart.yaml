@@ -6,7 +6,9 @@ annotations:
       url: https://www.jenkins.io/
 apiVersion: v2
 appVersion: 2.263.1
-description: Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
+description: Jenkins - Build great things at any scale! The leading open source automation
+  server, Jenkins provides hundreds of plugins to support building, deploying and
+  automating any project.
 home: https://jenkins.io/
 icon: https://imgcache.qq.com/qcloud/tcloud_dtc/static/Industry_tke/1b6d4b1b-6d47-48c2-a9c7-2935ff4e77af.png
 maintainers:
@@ -27,4 +29,3 @@ sources:
 - https://github.com/maorfr/kube-tasks
 - https://github.com/jenkinsci/configuration-as-code-plugin
 version: 3.0.12
-kubeVersion: <= 1.22.5-x

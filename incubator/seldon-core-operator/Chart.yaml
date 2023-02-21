@@ -14,4 +14,3 @@ sources:
 - https://github.com/SeldonIO/seldon-core/tree/master/helm-charts/seldon-core-operator
 - https://docs.seldon.io/projects/seldon-core/en/latest/workflow/install.html
 version: 1.12.0
-kubeVersion: <= 1.22.5-x

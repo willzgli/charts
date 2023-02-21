@@ -21,4 +21,3 @@ name: jaeger
 sources:
 - https://hub.docker.com/u/jaegertracing/
 version: 0.28.0
-kubeVersion: <= 1.22.5-x

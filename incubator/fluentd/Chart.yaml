@@ -17,4 +17,3 @@ sources:
 - https://github.com/coreos/fluentd-kubernetes-daemonset
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
 version: 2.4.0
-kubeVersion: < 1.22.0-x

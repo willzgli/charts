@@ -2,8 +2,7 @@ apiVersion: v2
 appVersion: 7.5.5
 description: The leading tool for querying and visualizing time series and metrics.
 home: https://grafana.net
-icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
-kubeVersion: <= 1.22.5-x
+icon: https://cloudcache.tencent-cloud.com/qcloud/ui/static/Industry_tke/e36ebf5a-40e6-422f-9ee0-b4fa29ab9cb3.png
 maintainers:
 - email: zanhsieh@gmail.com
   name: zanhsieh

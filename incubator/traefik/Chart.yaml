@@ -1,5 +1,8 @@
-apiVersion: v1
-appVersion: 2.2.1
+annotations:
+  artifacthub.io/changes: "- ⬆️i Update Traefik appVersion to 2.9.5\n- \U0001F41B
+    Use static appVersion for testing container config\n"
+apiVersion: v2
+appVersion: v2.9.5
 description: A Traefik based Kubernetes ingress controller
 home: https://traefik.io/
 icon: https://imgcache.qq.com/qcloud/tcloud_dtc/static/Industry_tke/84303761-3ea2-4cf9-908f-01f39166c24c.png
@@ -11,10 +14,15 @@ maintainers:
   name: emilevauge
 - email: daniel.tomcej@gmail.com
   name: dtomcej
-- email: ludovic@containo.us
+- email: ldez@traefik.io
   name: ldez
+- email: michel.loiseleur@traefik.io
+  name: mloiseleur
+- email: charlie.haley@traefik.io
+  name: charlie-haley
 name: traefik
 sources:
-- https://github.com/containous/traefik
-version: 8.9.0
-kubeVersion: < 1.22.0-x
+- https://github.com/traefik/traefik
+- https://github.com/traefik/traefik-helm-chart
+type: application
+version: 20.5.2

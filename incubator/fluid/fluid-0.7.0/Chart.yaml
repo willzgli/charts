@@ -8,10 +8,10 @@ keywords:
 - fluid
 - namespace:fluid-system
 - releaseName:fluid
+kubeVersion: ">= 1.16.0-x"
 maintainers:
 - email: chrisydxie@tencent.com
   name: chrisydxie
 name: fluid
 type: application
 version: 0.7.0
-kubeVersion: <= 1.22.5-x

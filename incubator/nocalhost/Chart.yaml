@@ -4,7 +4,7 @@ description: Nocalhost is Cloud Native Dev Environment.
 type: application
 version: 0.6.11
 appVersion: "v0.6.11"
-kubeVersion: '>= 1.16.0-0 <= 1.22.5-x'
+kubeVersion: ">= 1.16.0-x"
 sources:
   - https://github.com/nocalhost/nocalhost
 keywords:

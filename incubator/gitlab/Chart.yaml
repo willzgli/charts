@@ -12,4 +12,3 @@ name: gitlab
 sources:
 - https://jihulab.com/gitlab-cn/charts/gitlab
 version: 5.10.2
-kubeVersion: <= 1.22.5-x

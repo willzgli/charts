@@ -2,8 +2,8 @@ annotations:
   category: Infrastructure
 apiVersion: v1
 appVersion: 3.8.5
-description: Open source message broker software that implements the Advanced Message Queuing Protocol (AMQP)
-engine: gotpl
+description: Open source message broker software that implements the Advanced Message
+  Queuing Protocol (AMQP)
 home: https://www.rabbitmq.com
 icon: https://imgcache.qq.com/qcloud/tcloud_dtc/static/Industry_tke/2e36ee4a-2ba9-4aec-9512-b2b374cffc07.png
 keywords:
@@ -17,4 +17,3 @@ name: rabbitmq
 sources:
 - https://github.com/bitnami/bitnami-docker-rabbitmq
 version: 7.5.7
-kubeVersion: <= 1.22.5-x

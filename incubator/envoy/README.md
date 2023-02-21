@@ -50,3 +50,11 @@ All other user-configurable settings, default values and some commentary about t
 
 | `serviceMonitor.targetLabels`          | Labels to transfer from service onto the target     | `[]`                               |
 | `serviceMonitor.podTargetLabels`       | Labels to transfor from pod onto the target         | `[]`                               |
+
+
+Release Notes
+
+|  版本号     |    变更时间     |    变更内容   |
+|  ---------  | -------------- |--------------|
+|  1.9.2      | 2022年07月27日 | 修复chart内镜像地址为ccr.ccs.tencentyun.com, 支持1.21 之前集群|
+|  1.9.3      | 2023年02月21日 | 修改PodDisruptionBudget 资源版本为policy/v1, 支持1.21+ 集群| 

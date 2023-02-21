@@ -12,4 +12,3 @@ sources:
 - https://github.com/aerospike/aerospike-kubernetes-init
 - https://github.com/aerospike/aerospike-prometheus-exporter
 version: 5.0.0
-kubeVersion: <= 1.22.5-x
